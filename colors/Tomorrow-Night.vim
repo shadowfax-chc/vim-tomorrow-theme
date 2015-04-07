@@ -355,13 +355,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("htmlScriptTag", s:red, "", "")
 
     " Diff Highlighting
-  let s:diffbackground = "494e56"
+    let s:difforeground = "494e56"
 
     call <SID>X("diffAdded", s:green, "", "")
     call <SID>X("diffRemoved", s:red, "", "")
-    call <SID>X("DiffAdd",    s:diffbackground, s:green, "")
-    call <SID>X("DiffDelete", s:diffbackground, s:red, "")
-    call <SID>X("DiffChange", s:diffbackground, s:yellow, "")
+    call <SID>X("DiffAdd",    s:difforeground, s:green, "")
+    call <SID>X("DiffDelete", s:difforeground, s:red, "")
+    call <SID>X("DiffChange", s:difforeground, s:yellow, "")
     call <SID>X("DiffText",   s:orange, s:background, "")
 
     " ShowMarks Highlighting
