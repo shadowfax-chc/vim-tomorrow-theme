@@ -17,6 +17,8 @@ let s:aqua = "8abeb7"
 let s:blue = "81a2be"
 let s:purple = "b294bb"
 let s:window = "4d5057"
+" Diff Highlighting
+let s:difforeground = "494e56"
 
 " Console 256 Colours
 if !has("gui_running")
@@ -272,8 +274,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
     " Standard Highlighting
     call <SID>X("Comment", s:comment, "", "")
-    call <SID>X("Todo", s:comment, s:background, "")
-    call <SID>X("Title", s:comment, "", "")
+    call <SID>X("Todo", s:orange, s:difforeground, "")
+    call <SID>X("Title", s:purple, "", "")
     call <SID>X("Identifier", s:red, "", "none")
     call <SID>X("Statement", s:foreground, "", "")
     call <SID>X("Conditional", s:foreground, "", "")
@@ -321,10 +323,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
     " Python Highlighting
     call <SID>X("pythonInclude", s:purple, "", "")
-    call <SID>X("pythonStatement", s:purple, "", "")
-    call <SID>X("pythonConditional", s:purple, "", "")
-    call <SID>X("pythonRepeat", s:purple, "", "")
-    call <SID>X("pythonException", s:purple, "", "")
+    call <SID>X("pythonStatement", s:orange, "", "")
+    call <SID>X("pythonConditional", s:orange, "", "")
+    call <SID>X("pythonRepeat", s:orange, "", "")
+    call <SID>X("pythonException", s:red, "", "")
     call <SID>X("pythonFunction", s:blue, "", "")
 
     " Go Highlighting
@@ -354,8 +356,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("htmlArg", s:red, "", "")
     call <SID>X("htmlScriptTag", s:red, "", "")
 
-    " Diff Highlighting
-    let s:difforeground = "494e56"
 
     call <SID>X("diffAdded", s:green, "", "")
     call <SID>X("diffRemoved", s:red, "", "")
