@@ -17,6 +17,7 @@ let s:aqua = "8abeb7"
 let s:blue = "81a2be"
 let s:purple = "b294bb"
 let s:window = "4d5057"
+let s:bad = "330000"
 " Diff Highlighting
 let s:difforeground = "494e56"
 
@@ -261,6 +262,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("MatchParen", "", s:selection, "")
     call <SID>X("Folded", s:comment, s:background, "")
     call <SID>X("FoldColumn", "", s:background, "")
+    call <SID>X("SpellBad", "none", s:bad, "underline")
     if version >= 700
         call <SID>X("CursorLine", "", s:line, "none")
         call <SID>X("CursorColumn", "", s:line, "none")
