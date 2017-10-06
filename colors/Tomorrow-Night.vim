@@ -17,7 +17,7 @@ let s:aqua = "8abeb7"
 let s:blue = "81a2be"
 let s:purple = "b294bb"
 let s:window = "4d5057"
-let s:bad = "330000"
+let s:bad = "5f0000"
 " Diff Highlighting
 let s:difforeground = "494e56"
 
