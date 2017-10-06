@@ -9,6 +9,7 @@ let s:background = "1d1f21"
 let s:selection = "373b41"
 let s:line = "282a2e"
 let s:comment = "969896"
+let s:white = "ffffff"
 let s:red = "cc6666"
 let s:orange = "de935f"
 let s:yellow = "f0c674"
@@ -271,7 +272,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("Folded", s:comment, s:background, "")
     call <SID>X("FoldColumn", "", s:background, "")
     call <SID>X("SpellBad", "none", s:bad, "underline")
-    call <SID>X("Error", "none", s:bad, "")
+    call <SID>X("Error", s:white, s:bad, "")
     if version >= 700
         call <SID>X("CursorLine", "", s:line, "none")
         call <SID>X("CursorColumn", "", s:line, "none")
