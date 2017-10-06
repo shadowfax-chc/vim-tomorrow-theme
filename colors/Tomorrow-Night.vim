@@ -263,6 +263,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("Folded", s:comment, s:background, "")
     call <SID>X("FoldColumn", "", s:background, "")
     call <SID>X("SpellBad", "none", s:bad, "underline")
+    call <SID>X("Error", "none", s:bad, "")
     if version >= 700
         call <SID>X("CursorLine", "", s:line, "none")
         call <SID>X("CursorColumn", "", s:line, "none")
