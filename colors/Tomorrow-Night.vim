@@ -261,7 +261,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("TabLine", s:foreground, s:background, "reverse")
     call <SID>X("StatusLine", s:window, s:yellow, "reverse")
     call <SID>X("StatusLineNC", s:window, s:foreground, "reverse")
-    call <SID>X("VertSplit", s:window, s:window, "none")
+    call <SID>X("VertSplit", s:window, s:window, "NONE")
     call <SID>X("Visual", "", s:selection, "")
     call <SID>X("Directory", s:blue, "", "")
     call <SID>X("ModeMsg", s:green, "", "")
@@ -271,24 +271,24 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("MatchParen", "", s:selection, "")
     call <SID>X("Folded", s:comment, s:background, "")
     call <SID>X("FoldColumn", "", s:background, "")
-    call <SID>X("SpellBad", "none", s:bad, "underline")
+    call <SID>X("SpellBad", "NONE", s:bad, "underline")
     call <SID>X("Error", s:white, s:bad, "")
     if version >= 700
-        call <SID>X("CursorLine", "", s:line, "none")
-        call <SID>X("CursorColumn", "", s:line, "none")
-        call <SID>X("PMenu", s:foreground, s:selection, "none")
+        call <SID>X("CursorLine", "", s:line, "NONE")
+        call <SID>X("CursorColumn", "", s:line, "NONE")
+        call <SID>X("PMenu", s:foreground, s:selection, "NONE")
         call <SID>X("PMenuSel", s:foreground, s:selection, "reverse")
-        call <SID>X("SignColumn", "", s:background, "none")
+        call <SID>X("SignColumn", "", s:background, "NONE")
     end
     if version >= 703
-        call <SID>X("ColorColumn", "", s:line, "none")
+        call <SID>X("ColorColumn", "", s:line, "NONE")
     end
 
     " Standard Highlighting
     call <SID>X("Comment", s:comment, "", "")
     call <SID>X("Todo", s:orange, s:difforeground, "")
     call <SID>X("Title", s:purple, "", "")
-    call <SID>X("Identifier", s:red, "", "none")
+    call <SID>X("Identifier", s:red, "", "NONE")
     call <SID>X("Statement", s:foreground, "", "")
     call <SID>X("Conditional", s:foreground, "", "")
     call <SID>X("Repeat", s:foreground, "", "")
@@ -298,14 +298,14 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("String", s:green, "", "")
     call <SID>X("Special", s:foreground, "", "")
     call <SID>X("PreProc", s:purple, "", "")
-    call <SID>X("Operator", s:aqua, "", "none")
-    call <SID>X("Type", s:blue, "", "none")
-    call <SID>X("Define", s:purple, "", "none")
+    call <SID>X("Operator", s:aqua, "", "NONE")
+    call <SID>X("Type", s:blue, "", "NONE")
+    call <SID>X("Define", s:purple, "", "NONE")
     call <SID>X("Include", s:blue, "", "")
     "call <SID>X("Ignore", "666666", "", "")
 
     " Vim Highlighting
-    call <SID>X("vimCommand", s:red, "", "none")
+    call <SID>X("vimCommand", s:red, "", "NONE")
 
     " C Highlighting
     call <SID>X("cType", s:yellow, "", "")
@@ -377,10 +377,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("DiffText",   s:orange, s:background, "")
 
     " ShowMarks Highlighting
-    call <SID>X("ShowMarksHLl", s:orange, s:background, "none")
-    call <SID>X("ShowMarksHLo", s:purple, s:background, "none")
-    call <SID>X("ShowMarksHLu", s:yellow, s:background, "none")
-    call <SID>X("ShowMarksHLm", s:aqua, s:background, "none")
+    call <SID>X("ShowMarksHLl", s:orange, s:background, "NONE")
+    call <SID>X("ShowMarksHLo", s:purple, s:background, "NONE")
+    call <SID>X("ShowMarksHLu", s:yellow, s:background, "NONE")
+    call <SID>X("ShowMarksHLm", s:aqua, s:background, "NONE")
 
     " Delete Functions
     delf <SID>X
